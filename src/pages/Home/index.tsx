@@ -6,6 +6,7 @@ import costumersall from "../../assets/users-svgrepo-com1.svg";
 import signature from "../../assets/signature-doc-svgrepo-com.svg";
 import man from "../../assets/man.png"
 import polygon from "../../assets/tech.png"
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -17,7 +18,7 @@ export default function Home() {
             </CardGroup>
             <HappyCard>
                 <div>
-                    <h1>Parabens Manuel 👋</h1><br />
+                    <h1>Parabens Manuel <Link to="/entrar">👋</Link></h1><br />
                     <p>Voce já movimentou 1000KZ hoje !</p>
                 </div>
                     <div>
