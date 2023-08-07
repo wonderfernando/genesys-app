@@ -23,9 +23,9 @@ export const HappyCard = styled.div`
     }
    @media (max-width: 720px) {
     padding: 4rem 2rem;
+    width: 100%;
     img{
         display: none;
-        width: 5rem;
     }
    }
 `
