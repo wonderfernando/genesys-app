@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Layout() {
     const match = window.matchMedia("(max-width: 720px)").matches
-
+    console.log(match)
     const[isOpenSideBar, setOpenSideBar] = useState(!match)
     function toggleSideBar() {
         setOpenSideBar(state => !state)
