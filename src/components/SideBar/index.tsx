@@ -17,8 +17,8 @@ export default function SideBar({isOpenSideBar,toggleSideBar}: ISideBar) {
 
         console.log(match)
         if (match) {
-            console.log(match)
-            toggleSideBar()
+            console.log("match")
+        //    toggleSideBar()
         }
     },[pathname])
 
