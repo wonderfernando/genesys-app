@@ -10,7 +10,7 @@ interface ISideBar {
 }
 export default function SideBar({isOpenSideBar,toggleSideBar}: ISideBar) {
    
-    const {pathname} = useLocation() 
+    const location = useLocation() 
  
     useEffect(()=>{
         const match = window.matchMedia("(max-width: 720px)").matches
@@ -18,9 +18,9 @@ export default function SideBar({isOpenSideBar,toggleSideBar}: ISideBar) {
         console.log(match)
         if (match) {
             console.log("match")
-        //    toggleSideBar()
+            toggleSideBar()
         }
-    },[pathname])
+    },[location])
 
     return (
         <SideBarContainer $isOpenSideBar={isOpenSideBar}>
