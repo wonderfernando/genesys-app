@@ -1,0 +1,72 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "fernando@gmail.com",
+            "password": "admin" 
+        },       
+        {
+            "id": 1,
+            "email": "wonder@gmail.com",
+            "password": "admin" 
+        }
+
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "name": "Joao Lourenco",
+            "email": "joao@gmail.com", 
+            "phone": "91211212",
+            "bi":"00001210212LSA",
+            "city":"Luanda",
+            "cityid":"1",
+            "address":"Maianga, Rua 26 apt 12",
+            "gender":"Masculino"
+        },
+        {
+            "id": 2,
+            "name": "Manuel Homem",
+            "email": "manuel@gmail.com", 
+            "phone": "92121212",
+            "bi":"00001210212LSA",
+            "city":"Luanda",
+            "cityid":"1",
+            "address":"Maianga, Rua 26 apt 12",
+            "gender":"Masculino"
+        },
+        {
+            "id": 3,
+            "name": "Joana Lima",
+            "email": "lima@hotmail.com", 
+            "phone": "943122",
+            "bi":"00001210212LSA",
+            "city":"Benguela",
+            "cityid":"2",
+            "address":"Lobito, Rua 26 apt 12",
+            "gender":"Femenino"
+        },
+        {
+            "id": 4,
+            "name": "Youry James",
+            "email": "James@gmail.com", 
+            "phone": "91211212",
+            "bi":"00001210212LSA",
+            "city":"Luanda",
+            "cityid":"1",
+            "address":"Maianga, Rua 26 apt 12",
+            "gender":"Masculino"
+        },
+        {
+            "id": 5,
+            "name": "Zuleica Wilson",
+            "email": "zuzu@gmail.com", 
+            "phone": "935766792",
+            "bi":"0007210212LSA",
+            "city":"Luanda",
+            "cityid":"1",
+            "address":"Benfica, Rua 23 apt 11",
+            "gender":"Femenino"
+        }
+    ]
+}

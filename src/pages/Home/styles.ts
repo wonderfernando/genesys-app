@@ -7,6 +7,8 @@ export const HappyCard = styled.div`
    background: ${props=>props.theme["purple-500"]};
    color: #fff;
    display: flex; 
+   box-shadow:2px 2px 6px ${props => props.theme.title==="light" ? props.theme["gray-500"] : props.theme["gray-800"]};
+    
    position: relative;
    align-items: center;
    justify-content: space-between;

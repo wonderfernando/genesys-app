@@ -1,4 +1,4 @@
-export const ThemeDefault = {
+export const LightTheme = {
     "purple-900": "#1c3393",
     "purple-700": "#3243a6",
     "purple-500": "#4753b9",
@@ -18,12 +18,11 @@ export const ThemeDefault = {
     "red-500": "#ab222e",
     "red-700": "#7a1921",
     "yellow-500": "#fba94c",
-     "text":"#fff",
+     "text":"#333",
      "text-500":"#808080",
-     "background": "#121214",
-     "sidebar": "#29292e",
-     "title": "dark",
-     "white":"#ffffff"
+     "background": "#f1f1f1",
+     "sidebar": "#ffffff",
+      "title": "light",
+      "white":"#ffffff"
+    
 } as const
-
-export default ThemeDefault

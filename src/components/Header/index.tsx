@@ -1,14 +1,15 @@
 import { Avatar, HeaderContainer,ToolHeader, RootSwitch, ThemeModeDescription, ThumbSwitch } from "./styles";
 import {ListDashes,Bell,Envelope} from "phosphor-react"
 import avatar from "../../assets/avatar.jpg"
-import { useState } from "react";
 interface IHeader{
-    toggleSideBar: () => void
+    toggleSideBar: () => void,
+    changeMode: ()=>void,
+    isDarkMode:boolean
 }
-export default function Header({toggleSideBar} : IHeader) {
-    const[isDarkMode, setDarkMode] = useState(true)
-    function onCheckedChange() {
-        setDarkMode(!isDarkMode)
+export default function Header({toggleSideBar,changeMode,isDarkMode} : IHeader) {
+     function onCheckedChange() {
+        changeMode()
+        //setDarkMode(!isDarkMode)
     }
     return (
         <HeaderContainer>

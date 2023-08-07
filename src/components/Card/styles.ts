@@ -7,8 +7,8 @@ export const CardContainer = styled.div`
     gap: 1rem;
     border-radius: 4px;
     align-items: center;
-    box-shadow: 0 2px 10px ${props=>props.theme["gray-800"]};
-    background-color: ${props=>props.theme["gray-700"]};
+    box-shadow:2px 2px 4px ${props => props.theme.title==="light" ? props.theme["gray-100"] : props.theme["gray-800"]};
+    background-color: ${props=>props.theme["sidebar"]};
     img{
         width: 3rem;
         height: 3rem;

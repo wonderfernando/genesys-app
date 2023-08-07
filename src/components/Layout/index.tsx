@@ -4,7 +4,7 @@ import Header from "../Header";
 import { LayoutConteiner,MainConteiner } from "./styles";
 import { useState } from "react";
 
-export default function Layout() {
+export default function Layout({changeMode,isDarkMode}: {changeMode:()=>void, isDarkMode:boolean}) {
     const match = window.matchMedia("(max-width: 720px)").matches
     console.log(match)
     const[isOpenSideBar, setOpenSideBar] = useState(!match)
@@ -17,7 +17,7 @@ export default function Layout() {
         <LayoutConteiner>
              <SideBar toggleSideBar={toggleSideBar} isOpenSideBar={isOpenSideBar}/>
              <MainConteiner>
-                <Header toggleSideBar={toggleSideBar}/>
+                <Header isDarkMode={isDarkMode} changeMode={changeMode} toggleSideBar={toggleSideBar}/>
                 <Outlet/>
              </MainConteiner>
           

@@ -2,17 +2,17 @@ import { styled } from "styled-components";
 import * as Switch from "@radix-ui/react-switch"
 export const HeaderContainer = styled.div`
     
-    background: ${props=>props.theme["gray-900"]};
+    background: ${props=>props.theme["background"]};
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:.5rem 1rem;
     button{
         background: transparent;
-        color: #fff;
+        color:  ${props=>props.theme["text"]};
         padding: .5rem;
         &:hover{
-            background: ${props=>props.theme["gray-800"]};
+            background: ${props=>props.theme["sidebar"]};
         }
     }
     div:last-child{
@@ -28,7 +28,7 @@ export const RootSwitch = styled(Switch.Root)`
   background-color: red;
   border-radius: 9999px;
   position: relative;
-  box-shadow: 0 2px 10px #000;
+  box-shadow: 0 2px 10px #808080;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     outline: transparent;
  

@@ -17,11 +17,11 @@ export const GlobalStyles = createGlobalStyle`
         cursor: pointer;
     }
     body {
-        background: ${props=>props.theme["gray-900"]};
+        background: ${props=>props.theme["background"]};
         font-family: "Roboto", sans-serif;
         font-size: 1rem;
         font-weight: 400;
-        color: #fff;
+        color: ${props=>props.theme["text"]};;
     } 
     input,textarea,button{
         font-family: "Roboto", sans-serif;

@@ -7,12 +7,12 @@ import Transaction from "./pages/Transaction";
 import Plain from "./pages/Plain";
 import Payment from "./pages/Payment";
 
-export default function Router() {
+export default function Router({changeMode,isDarkMode}:{changeMode:()=>void, isDarkMode:boolean}) {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/entrar" element={<Login/>} />
-                <Route path="/" element={<Layout/>}>
+                <Route path="/" element={<Layout isDarkMode={isDarkMode} changeMode={changeMode}/>}>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/clientes" element={<Costumers/>}/>
                     <Route path="/pagamentos" element={<Payment/>}/>

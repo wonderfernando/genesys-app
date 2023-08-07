@@ -4,9 +4,10 @@ interface ISideBar{
 }
 
 export const SideBarContainer = styled.div<ISideBar>`
+    box-shadow: 30px #000;
     min-height: 100vh;
     transition: 200ms;
-    background: ${props=>props.theme["gray-700"]};
+    background: ${props=>props.theme["sidebar"]};
     width: ${  props=> props.$isOpenSideBar ? "15rem" : "0" };
   
     @media(max-width: 720px){
@@ -47,19 +48,21 @@ export const NavList = styled.div`
   gap: 1rem;
   border-radius: 4px;
   transition: 200ms;
-  color: ${props=>props.theme["gray-100"]};
+  color: ${ props => props.theme["text-500"] };
   padding: .5rem;
   font-size: .9rem;
-  font-weight: 100;
+  font-weight: bold;
   font-family: "Roboto";
   &:hover{
-   background :  ${props=>props.theme["gray-800"]}; 
+      color: ${ props => props.theme["text"] };
+      background :  ${props=>props.theme["purple-100"]}; 
   }
  }
  a{
     &.active li
     {
-        background:  ${props=>props.theme["purple-700"]}; ;
+      color: ${ props => props.theme["white"] };
+        background:  ${props=>props.theme["purple-700"]}; 
     }
  }
 `
