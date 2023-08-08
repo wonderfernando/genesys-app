@@ -1,10 +1,10 @@
 import {Pie} from "react-chartjs-2"
 import { PieChartContainer } from "./styles"
  
-export default function PyeChart({data}: any) {
-    return (
+export default function PyeChart({data,title }: {data: any, title: string}) {
+   
+  return (
        <PieChartContainer style={{display:"flex"}}>
-        <h1>Usando Chart.js</h1>
             <Pie
                 data={data}
                 
@@ -12,7 +12,7 @@ export default function PyeChart({data}: any) {
                     plugins: {
                       title: {
                         display: true,
-                        text: "Users Gained between 2016-2020"
+                        text: title
                       }
                     }
                   }}
