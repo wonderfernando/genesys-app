@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 `
 export const HappyCard = styled.div`
    background: ${props=>props.theme["purple-500"]};

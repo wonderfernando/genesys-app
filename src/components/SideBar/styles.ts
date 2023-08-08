@@ -11,7 +11,7 @@ export const SideBarContainer = styled.div<ISideBar>`
     width: ${  props=> props.$isOpenSideBar ? "15rem" : "0" };
   
     @media(max-width: 720px){
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       z-index: 999;
@@ -29,7 +29,9 @@ export const LogoContainer = styled.div`
   justify-content: flex-start;
   padding: 0 .5rem;
   gap: 0.5rem;
-
+  button{
+    color: red;
+  }
   span{
     font-weight: bold;
   }
@@ -76,12 +78,11 @@ export const TopSideBar = styled.div`
     button{
       display: none;
       background: transparent;
-        color: #fff;
-        padding: .5rem;
-        &:hover{
-            background: ${props=>props.theme["gray-800"]};
-           
-        }
+      color: #000;
+      padding: .5rem;
+      &:hover{
+            background: ${props=>props.theme["gray-800"]};   
+      }
     }
     @media(max-width: 720px){
       button{

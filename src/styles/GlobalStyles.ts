@@ -17,6 +17,7 @@ export const GlobalStyles = createGlobalStyle`
         cursor: pointer;
     }
     body {
+       overflow-y: hidden;
         background: ${props=>props.theme["background"]};
         font-family: "Roboto", sans-serif;
         font-size: 1rem;

@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import SideBar from "../SideBar";
 import Header from "../Header";
-import { LayoutConteiner,MainConteiner } from "./styles";
+import { Content, LayoutConteiner,MainConteiner } from "./styles";
 import { useState } from "react";
 
 export default function Layout({changeMode,isDarkMode}: {changeMode:()=>void, isDarkMode:boolean}) {
@@ -18,7 +18,10 @@ export default function Layout({changeMode,isDarkMode}: {changeMode:()=>void, is
              <SideBar toggleSideBar={toggleSideBar} isOpenSideBar={isOpenSideBar}/>
              <MainConteiner>
                 <Header isDarkMode={isDarkMode} changeMode={changeMode} toggleSideBar={toggleSideBar}/>
-                <Outlet/>
+                <Content>
+                    <Outlet/>
+                </Content>
+           
              </MainConteiner>
           
         </LayoutConteiner>
